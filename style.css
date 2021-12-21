@@ -1,0 +1,89 @@
+body form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+body > div:first-of-type {
+  background-image: url("route.jpg.webp");
+  background-size: 100% 100%;
+}
+
+body > div:first-of-type div {
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+body .rebon {
+  -webkit-animation: bounce 0.7s ease infinite;
+          animation: bounce 0.7s ease infinite;
+  position: relative;
+}
+
+@-webkit-keyframes bounce {
+  from {
+    top: 0px;
+  }
+  50% {
+    top: 5px;
+  }
+  to {
+    top: 14px;
+  }
+}
+
+@keyframes bounce {
+  from {
+    top: 0px;
+  }
+  50% {
+    top: 5px;
+  }
+  to {
+    top: 14px;
+  }
+}
+
+body .podium {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .podium div {
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  font-size: 1.4em;
+  padding-top: 10px;
+}
+
+body .podium div img {
+  margin-top: 35px;
+}
+
+body .podium .dur {
+  background-color: #d7baf2;
+}
+
+body .podium2 {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .podium2 div {
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  font-size: 1.4em;
+  padding-top: 10px;
+}
+
+body .podium2 .dur {
+  background-color: #d7baf2;
+}
+/*# sourceMappingURL=style.css.map */

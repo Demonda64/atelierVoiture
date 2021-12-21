@@ -1,0 +1,63 @@
+body{
+    form{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    &>div:first-of-type{
+        background-image: url("route.jpg.webp");
+        background-size: 100% 100%;
+
+        div{
+            padding-bottom: 25px;
+            padding-top: 25px;
+        }
+    }
+    .rebon{
+        
+            animation: bounce 0.7s ease infinite;
+            position: relative;
+       
+       
+       @keyframes bounce{
+            from {top: 0px;}
+            50%  {top: 5px;}
+            to   {top: 14px;}
+       }
+       
+    }
+    .podium{
+
+        display: flex;
+        justify-content: center;
+        div{
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            font-size: 1.4em;
+            padding-top: 10px;
+            img{
+                margin-top: 35px;
+            }
+        }
+        .dur{
+            background-color: rgb(215, 186, 242);
+        }
+    }
+    .podium2{
+
+        display: none;
+        justify-content: center;
+        div{
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            font-size: 1.4em;
+            padding-top: 10px;
+        }
+        .dur{
+            background-color: rgb(215, 186, 242);
+        }
+    }
+    
+}
+
