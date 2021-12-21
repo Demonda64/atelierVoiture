@@ -18,15 +18,18 @@
       <option value="familiale">Familiale</option>
       <option value="berline">Berline</option>
     </select>
-    <select name="couleurVoiture" id="couleurVoiture">
-      <option value="blue">Bleu</option>
-      <option value="red">Rouge</option>
-      <option value="green">Vert</option>
-      <option value="yellow">Jaune</option>
-    </select>
+    <input type="color" name="couleurVoiture" id="couleurVoiture">
+      
     <label for="vitesse">choisissez la vitesse</label>
     <input type="number" name="vitesse" id="vitesseVoiture">
-    <button type="button">Ajouter</button>
+
+
+    <button type="button" id="boutonClic">Ajouter</button>
+
+    <!-- <p>Vous avez <span id="nombreClics">0</span> voitures</p> -->
+    <p><button id="btMoins">-</button><span id="nb"> 0 </span><button id="btnPlus">+</button></p>
+
+
     <button type="button" disabled>Valider</button>
     <button type="button" disabled>Start</button>
   </form>

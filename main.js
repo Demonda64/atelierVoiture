@@ -33,7 +33,7 @@ window.onload = function () {
                     // fin de la course
                     if (pos > parseInt(window.innerWidth) - 150) {
                         clearInterval(interval);
-                        document.querySelector("footer").innerHTML += "<h2>la voiture numéro " + i + " gagne</h2>"; // affiche le vainceur
+                        document.querySelector("footer").innerHTML += "<h2>La voiture numéro " + i + " gagne</h2>"; // affiche le vainceur
                         var blocs = document.querySelectorAll("footer>div");
                         // afficher le podium
                         for (var j = 0; j < blocs.length; j++) {
@@ -69,4 +69,14 @@ function positionnerVoiture(voiture, divf, divpf) {
         voiture.couleur +
         "'/>";
 }
+
+
+var Clics = 0;
+
+function OnClick() {
+  Clics++;
+  document.getElementById("nombreClics").innerHTML = Clics;
+}
+document.getElementById("boutonClic").addEventListener('click', OnClick);
+
 
